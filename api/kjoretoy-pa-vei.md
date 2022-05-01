@@ -58,29 +58,27 @@ obligatoriske, betingede eller frivillige der.
 
 ### Dataelementer knyttet til transport <a id="dtransport"></a>
 
-| -------------------------- | ------------------ | ---------------- | ---------------- | --------- |
-| **DATAELEMENT**            |  **OBLIGATORISK**  |   **BETINGET**   |  **FRIVILLIG**   |  **NCTS5* |
-| -------------------------- |  ----------------- | - -------------- |  --------------- |  -------- |
-| **AVSENDER**               |                    |   **X**          |                  |  **B**    |
-| **MOTTAKER**               |                    |   **X**          |                  |  **B**    |
-| **TRANSPORTØR**            |  **X**             |                  |                  |  **O**    |
-| **ANDRE AEO-ER**           |                    |                  |  **X**           |  **O**    |
-| **FRAKTBREV**              |  **X**             |                  |                  |  **F**    |
-| **SAMLET BRUTTOVEKT**      |  **X**             |                  |                  |  **O**    |
-| **AKTIVT TRANSPORTMIDDEL** |  **X**             |                  |                  |  **B**    |
-| **FØRER**                  |  **X**             |                  |                  |  **-**    |
-| **TRANSPORTUTSTYR**        |                    |   **X**          |                  |  **B**    |
-| **TOLLSTED/TID FOR ANKOMST** |  **X**           |                  |                  |  **-**    |
-| **REISERUTE**              |                    |   **X**          |                  |  **B**    |
-| **PASSIVT TRANSPORTMIDDEL** |                   |                  |  **X**           |  **-**    |
-| **MANNSKAP**               |                    |                  |  **X**           |  **-**    |
-| **LASTESTED**              |                    |                  |  **X**           |  **F**    |
-| **LOSSESTED**              |                    |   **X**          |                  |  **O**    |
-| -------------------------- | ------------------ | ---------------- | ---------------- | --------- |
+| **DATAELEMENT**            |  **OBLIGATORISK**  |  **BETINGET**   | **FRIVILLIG**   | **NCTS5** |
+| -------------------------- |  ----------------- | --------------- | --------------- | -------- |
+| **AVSENDER**               |                    |  **X**          |                 | **B**    |
+| **MOTTAKER**               |                    |  **X**          |                 | **B**    |
+| **TRANSPORTØR**            |  **X**             |                 |                 | **O**    |
+| **ANDRE AEO-ER**           |                    |                 | **X**           | **O**    |
+| **FRAKTBREV**              |  **X**             |                 |                 | **F**    |
+| **SAMLET BRUTTOVEKT**      |  **X**             |                 |                 | **O**    |
+| **AKTIVT TRANSPORTMIDDEL** |  **X**             |                 |                 | **B**    |
+| **FØRER**                  |  **X**             |                 |                 | **-**    |
+| **TRANSPORTUTSTYR**        |                    |  **X**          |                 | **B**    |
+| **TOLLSTED/TID FOR ANKOMST** |  **X**           |                 |                 | **-**    |
+| **REISERUTE**              |                    |  **X**          |                 | **B**    |
+| **PASSIVT TRANSPORTMIDDEL** |                   |                 | **X**           | **-**    |
+| **MANNSKAP**               |                    |                 | **X**           | **-**    |
+| **LASTESTED**              |                    |                 | **X**           | **F**    |
+| **LOSSESTED**              |                    |  **X**          |                 | **O**    |
+
 
 ### Dataelementer knyttet til forsendelse <a id="dforsendelse"></a>
 
-| -------------------------- | ------------------- | --------------- | ---------------- | --------- |
 | **DATAELEMENT**            |  **OBLIGATORISK**   |  **BETINGET**   |  **FRIVILLIG**   |  **NCTS 5** |
 | -------------------------- |  ------------------ |  -------------- |  --------------- |  --------|
 | **AVSENDER**               |                     |  **X**          |                  |  **B**   |
@@ -96,11 +94,9 @@ obligatoriske, betingede eller frivillige der.
 | **LASTESTED**              |                     |                 |  **X**           |  **-**   |
 | **LOSSESTED**              |                     |  **X**          |                  |  **-**   |
 | **REISERUTE**              |                     |  **X**          |                  |  **-**   |
-| -------------------------- | ------------------- | --------------- | ---------------- | -------- |
 
 ### Dataelementer knyttet til vare <a id="dvare"></a>
 
-| --------------------------- | ------------------ | --------------- | ---------------- | --------- |
 | **DATAELEMENT**             | **OBLIGATORISK**   |  **BETINGET**   |  **FRIVILLIG**   |  **NCTS5** |
 | --------------------------- | ------------------ |  -------------- |  --------------- |  -------- |
 | **ANDRE AOE-ER**            |                    |                 |  **X**           |  **O**    |
@@ -114,109 +110,43 @@ obligatoriske, betingede eller frivillige der.
 | **PASSIVT TRANSPORTMIDDEL** |                    |                 |  **X**           |  **-**    |
 | **TRANSPORTUTSTYR**         |                    |                 |  **X**           |  **-**    |
 | **FARLIG GODS**             |                    |                 |  **X**           |  **X**    |
-| --------------------------- | ------------------ | --------------- | ---------------- | --------- |
 
 ## Melding om transport <a id="mtransport"></a>
 
 Oppsummering av innhold
 
-+-------------------+--------------------------------------------------+
-| **Område**        | **Beskrivelse**                                  |
-+===================+==================================================+
-| Melde transport   | Informasjon om transport og referanse til alle   |
-|                   | forsendelsene om bord i transporten              |
-+-------------------+--------------------------------------------------+
-| Avgiver av        | Speditør/Transportør/Vareeier/Fullmektig         |
-| informasjon       |                                                  |
-+-------------------+--------------------------------------------------+
-| Mottaker av       | Tolletaten                                       |
-| informasjon       |                                                  |
-+-------------------+--------------------------------------------------+
-| Er informasjon    | Ja                                               |
-| obligatorisk?     |                                                  |
-+-------------------+--------------------------------------------------+
-| Når ønskes        | Så tidlig som mulig, dog senest ved              |
-| informasjon hos   | grensepassering for transport                    |
-| Tolletaten?       |                                                  |
-+-------------------+--------------------------------------------------+
-| Når ønskes        | Informasjon må oppdateres når viktige deler av   |
-| oppdatering av    | informasjonen endres. Typisk ved endring av      |
-| informasjonen?    | kjennemerker, sjåfør, tid/sted for               |
-|                   | grensepassering, ved endringer i listen av       |
-|                   | forsendelser (flere forsendelser/færre           |
-|                   | forsendelser enn i foregående melding)           |
-+-------------------+--------------------------------------------------+
-| Frist for         | Senest ved grensepassering                       |
-| innsending        |                                                  |
-+-------------------+--------------------------------------------------+
-| Viktige           | Kjennemerke(r) på aktivt og passivt              |
-| info              | transportmiddel                                  |
-| rmasjonselementer |                                                  |
-|                   | Informasjon om fører                             |
-|                   |                                                  |
-|                   | Tid/sted for grensepassering                     |
-|                   |                                                  |
-|                   | Sporingsnummer til alle forsendelsene i          |
-|                   | transporten                                      |
-+-------------------+--------------------------------------------------+
-| Spesielt om       | Ved oppdatering og kansellering er MRN mottatt i |
-| oppdatering av    | opprinnelig melding den nøkkelen som skal brukes |
-| melding om        | for å identifisere riktig transport              |
-| transport         |                                                  |
-+-------------------+--------------------------------------------------+
+|  **Område**         |  **Beskrivelse** |
+| ------------------- | ---------------- |
+|  Melde transport    |  Informasjon om transport og referanse til alle forsendelsene om bord i transporten |
+|  Avgiver av informasjon |  Speditør/Transportør/Vareeier/Fullmektig |
+|  Mottaker av informasjon |  Tolletaten |
+|  Er informasjon obligatorisk?     |  Ja |
+|  Når ønskes informasjon hos Tolletaten? |  Så tidlig som mulig, dog senest ved grensepassering for transport |
+|  Når ønskes oppdatering av informasjonen? | Informasjon må oppdateres når viktige deler av informasjonen endres. Typisk ved endring av kjennemerker, sjåfør, tid/sted for grensepassering, ved endringer i listen av forsendelser (flere forsendelser/færre forsendelser enn i foregående melding) |
+|  Frist for innsending |  Senest ved grensepassering |
+|  Viktige informasjonselementer |  Kjennemerke(r) på aktivt og passivt transportmiddel, informasjon om fører, tid/sted for grensepassering, sporingsnummer til alle forsendelsene i transporten |
+|  Spesielt om oppdatering av melding om transport | Ved oppdatering og kansellering er MRN mottatt i opprinnelig melding den nøkkelen som skal brukes for å identifisere riktig transport |
+
 
 ## Melding om forsendelse <a id="mforsendelse"></a>
 
 Oppsummering av innhold
 
-+----------------------+-----------------------------------------------+
-| **Område**           | **Beskrivelse**                               |
-+======================+===============================================+
-| Melde forsendelse    | Informasjon om forsendelse.                   |
-+----------------------+-----------------------------------------------+
-| Avgiver av           | Speditør/Transportør/Vareeier/Fullmektig      |
-| informasjon          |                                               |
-+----------------------+-----------------------------------------------+
-| Mottaker av          | Tolletaten                                    |
-| informasjon          |                                               |
-+----------------------+-----------------------------------------------+
-| Er informasjon       | Ja                                            |
-| obligatorisk?        |                                               |
-+----------------------+-----------------------------------------------+
-| Når ønskes           | Så tidlig som mulig, dog senest ved           |
-| informasjon hos      | grensepassering for forsendelse               |
-| Tolletaten?          |                                               |
-+----------------------+-----------------------------------------------+
-| Når ønskes           | Informasjon ønsker oppdatert  når viktige     |
-| oppdatering av       | deler av informasjonen endres                 |
-| informasjonen?       |                                               |
-+----------------------+-----------------------------------------------+
-| Frist for innsending | Senest ved grensepassering                    |
-+----------------------+-----------------------------------------------+
-| Viktige              | Sporingsnummer                                |
-| i                    |                                               |
-| nformasjonselementer | Tollprosedyre                                 |
-|                      |                                               |
-|                      | Referanse til import og eksport deklarasjoner |
-|                      |                                               |
-|                      | Referanse til NCTS transittering(er)          |
-|                      |                                               |
-|                      | Varebeskrivelser/vekt/verdi                   |
-|                      |                                               |
-|                      | Avsender                                      |
-|                      |                                               |
-|                      | Mottaker                                      |
-+----------------------+-----------------------------------------------+
-| Spesielt om          | Ved oppdatering og kansellering er MRN        |
-| oppdatering av       | mottatt i opprinnelig melding nøkkelen som    |
-| melding om           | skal brukes for å identifisere riktig         |
-| forsendelse          | forsendelse.                                  |
-+----------------------+-----------------------------------------------+
+|  **Område**           | **Beskrivelse**                               |
+| ----------------------|-----------------------------------------------|
+|  Melde forsendelse    | Informasjon om forsendelse.                   |
+|  Avgiver av informasjon | Speditør/Transportør/Vareeier/Fullmektig      |
+|  Mottaker av informasjon | Tolletaten |
+|  Er informasjon obligatorisk?       | Ja |
+|  Når ønskes informasjon hos Tolletaten? | Så tidlig som mulig, dog senest ved grensepassering for forsendelse |
+|  Når ønskes oppdatering av informasjonen? | Informasjon ønsker oppdatert  når viktige deler av informasjonen endres |
+|  Frist for innsending | Senest ved grensepassering                    |
+|  Viktige informasjonselementer | Sporingsnummer, Tollprosedyre, Referanse til import og eksport deklarasjoner, Referanse til NCTS transittering(er), Varebeskrivelser/vekt/verdi, Avsender, Mottaker |
+| Spesielt om oppdatering av melding om transport | Ved oppdatering og kansellering er MRN mottatt i opprinnelig melding nøkkelen som skal brukes for å identifisere riktig forsendelse. |
 
 ## Grensesnittbeskrivelse <a id="grensesnitt"></a>
 
-Tjenestene vil gjøres tilgjengelige som REST-tjenester over HTTP, med
-data på JSON-format.
+Tjenestene vil gjøres tilgjengelige som REST-tjenester over HTTP, med data på JSON-format.
 
 
 ## Aktuelle eksempler <a id="miljo"></a>
@@ -280,8 +210,7 @@ nytt dersom meldinger blir avvist uten forklarlige feilmeldinger.
 -   Vi anbefaler våre klienter å følge med på planlagt og ikke-planlagt
     driftsavvik
 
-    -   [Digitaliseringsdirektoratet Status - Historikk
-        (digdir.no)](https://status.digdir.no/history?filter=nthvr1xysxs7)
+    -   [Digitaliseringsdirektoratet Status - Historikk (digdir.no)](https://status.digdir.no/history?filter=nthvr1xysxs7)
 
 Det er også mulig å verifisere om Maskinporten er oppe ved å benytte
 linkene under:
@@ -301,8 +230,7 @@ på <https://difi.github.io/felleslosninger/maskinporten_feilsoking.html>.
     Maskinporten: <https://samarbeid.difi.no/felleslosninger/maskinporten/ta-i-bruk-maskinporten/1-planlegge-og-akseptere-bruksvilkar>
 
 Når virksomheten har gått gjennom søknadsprosessen
-til Digitaliseringsdirektoratet vil Tolletaten godkjenne og gi tilgang
-til grensesnitt/scopes.
+til Digitaliseringsdirektoratet vil Tolletaten godkjenne og gi tilgang til grensesnitt/scopes.
 
 
 Dersom man benytter en (system)leverandør for å utveksle informasjon med
