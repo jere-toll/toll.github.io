@@ -1,5 +1,7 @@
 # Dokumentasjon av eksternt grensesnitt: API for Kjøretøy på vei
 
+## Innhold
+
 -   [Om tjenesten](#omtjenesten)
 
 -   [Data](#data)
@@ -13,10 +15,6 @@
 -   [Melding om transport](#mtransport)
 
 -   [Melding om forsendelse](#mforsendelse)
-
--   [Grensesnittbeskrivelse](#grensesnitt)
-
--   [Miljø](#miljo)
 
 -   [Aktuelle eksempler](#eksempler)
 
@@ -60,106 +58,63 @@ obligatoriske, betingede eller frivillige der.
 
 ### Dataelementer knyttet til transport <a id="dtransport"></a>
 
-  -------------------------------------------------------------------------------------
-**DATAELEMENT**            **OBLIGATORISK**   **BETINGET**   **FRIVILLIG**   **NCTS
-5**
-  -------------------------- ------------------ -------------- --------------- --------
-**AVSENDER**                                  **X**                          **B**
-
-**MOTTAKER**                                  **X**                          **B**
-
-**TRANSPORTØR**            **X**                                             **O**
-
-**ANDRE AEO-ER**                                             **X**           **O**
-
-**FRAKTBREV**              **X**                                             **F**
-
-**SAMLET BRUTTOVEKT**      **X**                                             **O**
-
-**AKTIVT TRANSPORTMIDDEL** **X**                                             **B**
-
-**FØRER**                  **X**                                             **-**
-
-**TRANSPORTUTSTYR**                           **X**                          **B**
-
-**TOLLSTED/TID FOR         **X**                                             **-**
-ANKOMST**
-
-**REISERUTE**                                 **X**                          **B**
-
-**PASSIVT                                                    **X**           **-**
-TRANSPORTMIDDEL**
-
-**MANNSKAP**                                                 **X**           **-**
-
-**LASTESTED**                                                **X**           **F**
-
-**LOSSESTED**                                 **X**                          **O**
--------------------------------------------------------------------------------------
+| -------------------------- | ------------------ | ---------------- | ---------------- | --------- |
+| **DATAELEMENT**            |  **OBLIGATORISK**  |   **BETINGET**   |  **FRIVILLIG**   |  **NCTS5* |
+| -------------------------- |  ----------------- | - -------------- |  --------------- |  -------- |
+| **AVSENDER**               |                    |   **X**          |                  |  **B**    |
+| **MOTTAKER**               |                    |   **X**          |                  |  **B**    |
+| **TRANSPORTØR**            |  **X**             |                  |                  |  **O**    |
+| **ANDRE AEO-ER**           |                    |                  |  **X**           |  **O**    |
+| **FRAKTBREV**              |  **X**             |                  |                  |  **F**    |
+| **SAMLET BRUTTOVEKT**      |  **X**             |                  |                  |  **O**    |
+| **AKTIVT TRANSPORTMIDDEL** |  **X**             |                  |                  |  **B**    |
+| **FØRER**                  |  **X**             |                  |                  |  **-**    |
+| **TRANSPORTUTSTYR**        |                    |   **X**          |                  |  **B**    |
+| **TOLLSTED/TID FOR ANKOMST** |  **X**           |                  |                  |  **-**    |
+| **REISERUTE**              |                    |   **X**          |                  |  **B**    |
+| **PASSIVT TRANSPORTMIDDEL** |                   |                  |  **X**           |  **-**    |
+| **MANNSKAP**               |                    |                  |  **X**           |  **-**    |
+| **LASTESTED**              |                    |                  |  **X**           |  **F**    |
+| **LOSSESTED**              |                    |   **X**          |                  |  **O**    |
+| -------------------------- | ------------------ | ---------------- | ---------------- | --------- |
 
 ### Dataelementer knyttet til forsendelse <a id="dforsendelse"></a>
 
-  -------------------------------------------------------------------------------------
-**DATAELEMENT**            **OBLIGATORISK**   **BETINGET**   **FRIVILLIG**   **NCTS
-5**
-  -------------------------- ------------------ -------------- --------------- --------
-**AVSENDER**                                  **X**                          **B**
-
-**MOTTAKER**                                  **X**                          **B**
-
-**ANDRE AEO-ER**                                             **X**           **O**
-
-**FRAKTBREV**              **X**                                             **O**
-
-**RELEVANTE DOKUMENTER**                      **X**                          **O**
-
-**FRAKTKOSTNADER**         **X**                                             **O**
-
-**SAMLET FAKTURERT VERDI** **X**                                             **-**
-
-**BRUTTOVEKT**             **X**                                             **O**
-
-**PASSIVT                                                    **X**           **-**
-TRANSPORTMIDDEL**
-
-**TRANSPORTUTSTYR**                                          **X**           **-**
-
-**LASTESTED**                                                **X**           **-**
-
-**LOSSESTED**                                 **X**                          **-**
-
-**REISERUTE**                                 **X**                          **-**
--------------------------------------------------------------------------------------
+| -------------------------- | ------------------- | --------------- | ---------------- | --------- |
+| **DATAELEMENT**            |  **OBLIGATORISK**   |  **BETINGET**   |  **FRIVILLIG**   |  **NCTS 5** |
+| -------------------------- |  ------------------ |  -------------- |  --------------- |  --------|
+| **AVSENDER**               |                     |  **X**          |                  |  **B**   |
+| **MOTTAKER**               |                     |  **X**          |                  |  **B**   |
+| **ANDRE AEO-ER**           |                     |                 |  **X**           |  **O**   |
+| **FRAKTBREV**              |  **X**              |                 |                  |  **O**   |
+| **RELEVANTE DOKUMENTER**   |                     |  **X**          |                  |  **O**   |
+| **FRAKTKOSTNADER**         |  **X**              |                 |                  |  **O**   |
+| **SAMLET FAKTURERT VERDI** |  **X**              |                 |                  |  **-**   |
+| **BRUTTOVEKT**             |  **X**              |                 |                  |  **O**   |
+| **PASSIVT TRANSPORTMIDDEL** |                    |                 |  **X**           |  **-**   |
+| **TRANSPORTUTSTYR**        |                     |                 |  **X**           |  **-**   |
+| **LASTESTED**              |                     |                 |  **X**           |  **-**   |
+| **LOSSESTED**              |                     |  **X**          |                  |  **-**   |
+| **REISERUTE**              |                     |  **X**          |                  |  **-**   |
+| -------------------------- | ------------------- | --------------- | ---------------- | -------- |
 
 ### Dataelementer knyttet til vare <a id="dvare"></a>
 
-  --------------------------------------------------------------------------------------
-**DATAELEMENT**             **OBLIGATORISK**   **BETINGET**   **FRIVILLIG**   **NCTS
-5**
-  --------------------------- ------------------ -------------- --------------- --------
-**ANDRE AOE-ER**                                              **X**           **O**
-
-**RELEVANTE DOKUMENTER**                       **X**                          **O**
-
-**FAKTURERT VERDI**         **X**                                             **-**
-
-**VAREBESKRIVELSE OG        **X**                                             **X**
---NUMMER**
-
-**BRUTTO- OG NETTOVEKT**    **X**                                             **F +
-B**
-
-**EMBALLASJE OG ANTALL                                        **X**           **O +
-KOLLI**                                                                       B**
-
-**OPPRINNELSESLAND**        **X**                                             **-**
-
-**PASSIVT TRANSPORTMIDDEL**                                   **X**           **-**
-
-**TRANSPORTUTSTYR**                                           **X**           **-**
-
-**FARLIG GODS**                                               **X**           **X**
---------------------------------------------------------------------------------------
+| --------------------------- | ------------------ | --------------- | ---------------- | --------- |
+| **DATAELEMENT**             | **OBLIGATORISK**   |  **BETINGET**   |  **FRIVILLIG**   |  **NCTS5** |
+| --------------------------- | ------------------ |  -------------- |  --------------- |  -------- |
+| **ANDRE AOE-ER**            |                    |                 |  **X**           |  **O**    |
+| **RELEVANTE DOKUMENTER**    |                    |  **X**          |                  |  **O**    |
+| **FAKTURERT VERDI**         | **X**              |                 |                  |  **-**    |
+| **VAREBESKRIVELSE OG NUMMER** | **X**            |                 |                  |  **X**    |
+| --NUMMER**                  |                    |                 |                  |           |
+| **BRUTTO- OG NETTOVEKT**    | **X**              |                 |                  |  **F+B**  |
+| **EMBALLASJE OG ANTALL KOLLI** |                 |                 |  **X**           |  **O+B**  |
+| **OPPRINNELSESLAND**        | **X**              |                 |                  |  **-**    |
+| **PASSIVT TRANSPORTMIDDEL** |                    |                 |  **X**           |  **-**    |
+| **TRANSPORTUTSTYR**         |                    |                 |  **X**           |  **-**    |
+| **FARLIG GODS**             |                    |                 |  **X**           |  **X**    |
+| --------------------------- | ------------------ | --------------- | ---------------- | --------- |
 
 ## Melding om transport <a id="mtransport"></a>
 
@@ -264,16 +219,6 @@ Tjenestene vil gjøres tilgjengelige som REST-tjenester over HTTP, med
 data på JSON-format.
 
 
-## Miljø <a id="miljo"></a>
-
-  -----------------------------------------------------------------------
-**Miljø**            **URL**
-  -------------------- --------------------------------------------------
-Produksjon           https://api.toll.no/
-
-Test                 https://api-test.toll.no/
------------------------------------------------------------------------
-
 ## Aktuelle eksempler <a id="miljo"></a>
 
 -   Forsendelse direktefortolling med prosedyre ut av EU = eksport
@@ -367,4 +312,3 @@ Om du ønsker å finne ut hva rollene gir tilgang til, logg inn
 i Altinn og se under *Skjema og tjenester du har rettighet til*, der får
 du oversikt over rollene du har for den aktøren du representerer. Til
 høyre for hver rolle finner du et spørsmålstegn, klikk der og du vil se
-hvilke tilganger rollen gir deg.
