@@ -103,7 +103,6 @@ obligatoriske, betingede eller frivillige der.
 | **RELEVANTE DOKUMENTER**    |                    |  **X**          |                  |  **O**    |
 | **FAKTURERT VERDI**         | **X**              |                 |                  |  **-**    |
 | **VAREBESKRIVELSE OG NUMMER** | **X**            |                 |                  |  **X**    |
-| --NUMMER**                  |                    |                 |                  |           |
 | **BRUTTO- OG NETTOVEKT**    | **X**              |                 |                  |  **F+B**  |
 | **EMBALLASJE OG ANTALL KOLLI** |                 |                 |  **X**           |  **O+B**  |
 | **OPPRINNELSESLAND**        | **X**              |                 |                  |  **-**    |
@@ -239,4 +238,4 @@ Tolletaten må rettigheter delegeres via Altinn: <https://www.altinn.no/hjelp/pr
 Om du ønsker å finne ut hva rollene gir tilgang til, logg inn
 i Altinn og se under *Skjema og tjenester du har rettighet til*, der får
 du oversikt over rollene du har for den aktøren du representerer. Til
-høyre for hver rolle finner du et spørsmålstegn, klikk der og du vil se
+høyre for hver rolle finner du et spørsmålstegn, klikk der og du vil se hvilke tilganger rollen gir deg. 
